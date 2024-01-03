@@ -35,7 +35,7 @@ namespace DesafioFundamentos.Models
                 decimal valorTotal = 0; 
 
                 horas = Convert.ToInt32(Console.ReadLine()); //pega valor digitado
-                valorTotal = precoInicial + precoPorHora * horas; // Realiza calculo para saber o valor total.
+                valorTotal = precoInicial + precoPorHora * horas; // Realiza cálculo para saber o valor total.
 
                 veiculos.Remove(placa); //remove placa
                 
@@ -54,10 +54,10 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Os veículos estacionados são:");
             
-                //Exibe os veiculos estacionados
-                foreach (string item in veiculos)
+                //Exibe os veículos estacionados
+                foreach (string veiculo in veiculos)
                 {
-                    Console.WriteLine($"{item}");
+                    Console.WriteLine($"{veiculo}");
                 }
                 
             }
